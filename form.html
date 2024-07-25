@@ -50,39 +50,39 @@
         <form action="./Tables Project/tablepro.html" method="get">
         <tr>
             <td><label for="name"><b>Name:</b></label></td>
-            <td><input type="text" name="first_name" id="first_name" placeholder="First Name" style="height: 30px;"></td>
-            <td><input type="text" name="middle_name" id="middle_name" placeholder="Middle Name" style="height: 30px;"></td>
-            <td><input type="text" name="last_name" id="last_name" placeholder="Last Name" style="height: 30px;"></td>
+            <td><input type="text" name="first_name" id="first_name" placeholder="First Name" style="height: 30px;" required></td>
+            <td><input type="text" name="middle_name" id="middle_name" placeholder="Middle Name" style="height: 30px;" required></td>
+            <td><input type="text" name="last_name" id="last_name" placeholder="Last Name" style="height: 30px;" required></td>
         </tr>
         <tr>
             <td><label for="email"><b>Email:</b></label></td>
-            <td colspan="3"><input type="email" name="email" id="email" placeholder="Enter Your Email" style="width: 523px; height: 30px;"></td>
+            <td colspan="3"><input type="email" name="email" id="email" placeholder="Enter Your Email" style="width: 523px; height: 30px;" required></td>
         </tr>
         <tr>
             <td><label for="password"><b>Password:</b></label></td>
-            <td colspan="3"><input type="password" name="password" id="password" placeholder="Enter Your Password" style="width: 523px; height: 30px;"></td>
+            <td colspan="3"><input type="password" name="password" id="password" placeholder="Enter Your Password" style="width: 523px; height: 30px;" required></td>
         </tr>
         <tr>
             <td><label for="password"><b>Confirm Password:</b></label></td>
-            <td colspan="3"><input type="password" name="password" id="confirm_password" placeholder="Enter Your Password" style="width: 523px; height: 30px;"></td>
+            <td colspan="3"><input type="password" name="password" id="confirm_password" placeholder="Enter Your Password" style="width: 523px; height: 30px;" required></td>
         </tr>
         <tr>
             <td><label for="address"><b>Address:</b></label></td>
-            <td colspan="3"><textarea name="address" id="address" cols="75" rows="6" placeholder="Enter Your Address" style="border-radius: 10px; box-shadow: 0px 0px 5px rgb(10, 57, 158); border: none; outline: none; font-family: Arial, Helvetica, sans-serif; padding: 5px;"></textarea></td>
+            <td colspan="3"><textarea name="address" id="address" cols="75" rows="6" placeholder="Enter Your Address" required style="border-radius: 10px; box-shadow: 0px 0px 5px rgb(10, 57, 158); border: none; outline: none; font-family: Arial, Helvetica, sans-serif; padding: 5px;"></textarea></td>
         </tr>
         <tr>
             <td><label for="college_name"><b>College Name:</b></label></td>
-            <td colspan="3"><input type="text" name="college_name" id="college_name" placeholder="Enter Your College Name" style="width: 523px; height: 30px;"></td>
+            <td colspan="3"><input type="text" name="college_name" id="college_name" placeholder="Enter Your College Name" required style="width: 523px; height: 30px;"></td>
         </tr>
         <tr>
             <td><label for="mobile_number"><b>Mobile No.:</b></label></td>
-            <td colspan="3"><input type="text" name="number" id="number" value="+91" style="width: 30px; height: 30px;" readonly><input type="number" name="number" id="number" placeholder="Enter Your Moblie Number" style="width: 479px; height: 30px; margin-left: 10px;"></td>
+            <td colspan="3"><input type="text" name="number" id="number" value="+91" style="width: 30px; height: 30px;" readonly><input type="number" name="number" id="number" placeholder="Enter Your Moblie Number" required style="width: 479px; height: 30px; margin-left: 10px;"></td>
         </tr>
         <tr>
             <td><label for="gender"><b>Gender:</b></label></td>
             <td colspan="3">
                 <select name="gender" id="gender" style="height: 30px; width: 119px; border: none; box-shadow: 0px 0px 5px rgb(10, 57, 158);
-            border-radius: 10px; outline: none;">
+            border-radius: 10px; outline: none;" required>
                     <option value="" disabled selected>Select Gender</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -92,15 +92,15 @@
         </tr>
         <tr>
             <td><label for="city"><b>City:</b></label></td>
-            <td colspan="3"><input type="text" name="city" id="city" placeholder="Enter City Name" style="width: 523px; height: 30px;"></td>
+            <td colspan="3"><input type="text" name="city" id="city" placeholder="Enter City Name" style="width: 523px; height: 30px;" required></td>
         </tr>
         <tr>
             <td><label for="state"><b>State:</b></label></td>
-            <td colspan="3"><input type="text" name="state" id="state" placeholder="Enter State Name" style="width: 523px; height: 30px;"></td>
+            <td colspan="3"><input type="text" name="state" id="state" placeholder="Enter State Name" style="width: 523px; height: 30px;" required></td>
         </tr>
         <tr>
             <td><label for="country"><b>Country:</b></label></td>
-            <td colspan="3"><input type="text" name="country" id="country" placeholder="Enter Country Name" style="width: 523px; height: 30px;"></td>
+            <td colspan="3"><input type="text" name="country" id="country" placeholder="Enter Country Name" style="width: 523px; height: 30px;" required></td>
         </tr>
         <tr>
             <td><label for="hobbies"><b>Hobbies:</b></label></td>
