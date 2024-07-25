@@ -25,7 +25,7 @@
         }
 
         .check{
-            margin-left: 30px;
+            margin-left: 25px;
         }
 
         table{
@@ -34,17 +34,20 @@
             box-shadow: 0px 0px 20px black;
             background: linear-gradient(to top, #739393, #decba4); 
         }
+
+        label{
+            font-size: large;
+        }
     </style>
 </head>
 <body style="background: linear-gradient(to top, #48e4c8, #91a1e4);">
-
     <center>
-    <form action="./Tables Project/tablepro.html" method="get">
-    <table cellspacing="10px">
+        <h1><font size="7">Student Admission Form</font></h1>
+    </center>
+    <center>
+    <table cellspacing="9px">
         <tbody>
-        <tr>
-            <td colspan="4"><h1><font size="8">Student Admission Form</font></h1></td>
-        </tr>
+        <form action="./Tables Project/tablepro.html" method="get">
         <tr>
             <td><label for="name"><b>Name:</b></label></td>
             <td><input type="text" name="first_name" id="first_name" placeholder="First Name" style="height: 30px;"></td>
@@ -65,7 +68,7 @@
         </tr>
         <tr>
             <td><label for="address"><b>Address:</b></label></td>
-            <td colspan="3"><input type="text" name="address" id="address" placeholder="Enter Your Address" style="width: 523px; height: 80px;"></td>
+            <td colspan="3"><textarea name="address" id="address" cols="75" rows="6" placeholder="Enter Your Address" style="border-radius: 10px; box-shadow: 0px 0px 5px rgb(10, 57, 158); border: none; outline: none; font-family: Arial, Helvetica, sans-serif; padding: 5px;"></textarea></td>
         </tr>
         <tr>
             <td><label for="college_name"><b>College Name:</b></label></td>
@@ -123,11 +126,11 @@
             </td>
         </tr>
         <tr>
-            <td colspan="4"><input type="submit" value="Submit" style="height: 50px; background-color: midnightblue; color: white; letter-spacing: 3px; border-radius: 20px; width: 675px; box-shadow: 2px 2px 5px black; margin-top: 20px; font-size: larger; cursor: pointer;"></td>
+            <td colspan="4"><input type="submit" value="Submit" style="height: 50px; background-color: midnightblue; color: white; letter-spacing: 3px; border-radius: 20px; width: 690px; box-shadow: 2px 2px 5px black; margin-top: 10px; font-size: larger; cursor: pointer;"></td>
         </tr>
+        </form>
         </tbody>
     </table>
-    </form>
     </center>
 </body>
 </html>
