@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
+    <style>
+        input{
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 5px rgb(10, 57, 158);
+            border-radius: 10px;
+        }
+
+        h1{
+            color: midnightblue;
+            text-shadow: 1px 1px 5px black;
+            text-align: center;
+            
+        }
+
+        option{
+            text-align: center;
+            border: none;
+        }
+
+        .check{
+            margin-left: 30px;
+        }
+
+        table{
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px black;
+            background: linear-gradient(to top, #739393, #decba4); 
+        }
+    </style>
 </head>
-<body>
-    
+<body style="background: linear-gradient(to top, #48e4c8, #91a1e4);">
+
+    <center>
+    <form action="./Tables Project/tablepro.html" method="get">
+    <table cellspacing="10px">
+        <tbody>
+        <tr>
+            <td colspan="4"><h1><font size="8">Student Admission Form</font></h1></td>
+        </tr>
+        <tr>
+            <td><label for="name"><b>Name:</b></label></td>
+            <td><input type="text" name="first_name" id="first_name" placeholder="First Name" style="height: 30px;"></td>
+            <td><input type="text" name="middle_name" id="middle_name" placeholder="Middle Name" style="height: 30px;"></td>
+            <td><input type="text" name="last_name" id="last_name" placeholder="Last Name" style="height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="email"><b>Email:</b></label></td>
+            <td colspan="3"><input type="email" name="email" id="email" placeholder="Enter Your Email" style="width: 523px; height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="password"><b>Password:</b></label></td>
+            <td colspan="3"><input type="password" name="password" id="password" placeholder="Enter Your Password" style="width: 523px; height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="password"><b>Confirm Password:</b></label></td>
+            <td colspan="3"><input type="password" name="password" id="confirm_password" placeholder="Enter Your Password" style="width: 523px; height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="address"><b>Address:</b></label></td>
+            <td colspan="3"><input type="text" name="address" id="address" placeholder="Enter Your Address" style="width: 523px; height: 80px;"></td>
+        </tr>
+        <tr>
+            <td><label for="college_name"><b>College Name:</b></label></td>
+            <td colspan="3"><input type="text" name="college_name" id="college_name" placeholder="Enter Your College Name" style="width: 523px; height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="mobile_number"><b>Mobile No.:</b></label></td>
+            <td colspan="3"><input type="text" name="number" id="number" value="+91" style="width: 30px; height: 30px;" readonly><input type="number" name="number" id="number" placeholder="Enter Your Moblie Number" style="width: 479px; height: 30px; margin-left: 10px;"></td>
+        </tr>
+        <tr>
+            <td><label for="gender"><b>Gender:</b></label></td>
+            <td colspan="3">
+                <select name="gender" id="gender" style="height: 30px; width: 119px; border: none; box-shadow: 0px 0px 5px rgb(10, 57, 158);
+            border-radius: 10px; outline: none;">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="city"><b>City:</b></label></td>
+            <td colspan="3"><input type="text" name="city" id="city" placeholder="Enter City Name" style="width: 523px; height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="state"><b>State:</b></label></td>
+            <td colspan="3"><input type="text" name="state" id="state" placeholder="Enter State Name" style="width: 523px; height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="country"><b>Country:</b></label></td>
+            <td colspan="3"><input type="text" name="country" id="country" placeholder="Enter Country Name" style="width: 523px; height: 30px;"></td>
+        </tr>
+        <tr>
+            <td><label for="hobbies"><b>Hobbies:</b></label></td>
+            <td colspan="3">
+                <label for="music">
+                <input type="checkbox" name="music" value="music" id="music" style="box-shadow: none;">Music
+                </label>
+                <label for="sports">
+                <input type="checkbox" name="sports" value="sports" id="sports" class="check" style="box-shadow: none;">sports
+                </label>
+                <label for="art">
+                <input type="checkbox" name="art" value="art" id="art" class="check" style="box-shadow: none;">Art
+                </label>
+                <label for="dance">
+                <input type="checkbox" name="dance" value="dance" id="dance" class="check" style="box-shadow: none;">Dance
+                </label>
+                <label for="cooking">
+                <input type="checkbox" name="cooking" value="cooking" id="cooking" class="check" style="box-shadow: none;">Cooking
+                </label>
+                <label for="reading">
+                <input type="checkbox" name="reading" value="reading" id="reading" class="check" style="box-shadow: none;">Reading
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="submit" value="Submit" style="height: 50px; background-color: midnightblue; color: white; letter-spacing: 3px; border-radius: 20px; width: 675px; box-shadow: 2px 2px 5px black; margin-top: 20px; font-size: larger; cursor: pointer;"></td>
+        </tr>
+        </tbody>
+    </table>
+    </form>
+    </center>
 </body>
 </html>
