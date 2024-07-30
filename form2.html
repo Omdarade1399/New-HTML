@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            background: linear-gradient(to top, #739393, #decba4);
+        }
+
+        input{
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+            padding: 5px;
+        }
+
+        table{
+            font-size: large;
+            background-color: rgb(49, 219, 219);
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 20px black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form action="./table.html" method="get">    
+    <table cellspacing="10px">
+        <tr>
+            <td colspan="4">
+                <h1 style="text-align: center;"><font>Student Registration Form</font></h1>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="name"><b>Name:</b></label></td>
+            <td colspan="3"><input type="text" name="name" id="name" placeholder="Enter Your Name" style="width: 523px; height: 30px;" required></td>
+        </tr>
+        <tr>
+            <td><label for="father_name"><b>Father's Name:</b></label></td>
+            <td colspan="3"><input type="text" name="father_name" id="father_name" placeholder="Enter Your Father's Name" style="width: 523px; height: 30px;" required></td>
+        </tr>
+        <tr>
+            <td><label for="mother_name"><b>Mother's Name:</b></label></td>
+            <td colspan="3"><input type="text" name="mother_name" id="mother_name" placeholder="Enter Your Mother's Name" style="width: 523px; height: 30px;" required></td>
+        </tr>
+        <tr>
+            <td><label for="number"><b>Mobile No.:</b></label></td>
+            <td colspan="3"><input type="tel" name="" id="number" placeholder="Enter Your Mobile Number" minlength="10" maxlength="10" style="width: 523px; height: 30px;" required></td>
+        </tr>
+        <tr>
+            <td><label for="email"><b>Email:</b></label></td>
+            <td colspan="3"><input type="email" name="email" id="email" placeholder="Enter Your Email" style="width: 523px; height: 30px;" required></td>
+        </tr>
+        <tr>
+            <td><label for="gender"><b>Gender:</b></label></td>
+            <td colspan="3">
+                <label for="male">
+                    <input type="radio" name="gender" value="male" id="male" style="box-shadow: none;">Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" value="female" id="female" style="box-shadow: none;">Female
+                </label>
+                <label for="other">
+                    <input type="radio" name="gender" value="other" id="other" style="box-shadow: none;">Other
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="date"><b>Date Of Birth:</b></label></td>
+            <td colspan="3">
+                <input type="date" name="date" id="date" style="width: 115px; height: 30px;" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="address"><b>Address:</b></label></td>
+            <td colspan="3"><input type="text" name="address" id="address" placeholder="Enter Your Address" style="width: 523px; height: 30px;" required></td>
+        </tr>
+        <td><label for="blood_group"><b>Blood Group:</b></label></td>
+            <td colspan="3">
+                <select name="blood_group" id="blood_group" style="height: 30px; width: 140px; border: none; border-radius: 10px; outline: none; box-shadow: 0px 0px 5px black;" required>
+                    <option value="" disabled selected>Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="department"><b>Department:</b></label></td>
+            <td colspan="3">
+                <label for="bcs">
+                <input type="checkbox" name="bcs" value="bcs" id="bcs" style="box-shadow: none;">BCS
+                </label>
+                <label for="bsc">
+                <input type="checkbox" name="bsc" value="bsc" id="bsc" style="box-shadow: none;">B.Sc
+                </label>
+                <label for="bca">
+                <input type="checkbox" name="bca" value="bca" id="bca" style="box-shadow: none;">BCA
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="course"><b>Course:</b></label></td>
+            <td colspan="3">
+                <label for="c">
+                <input type="checkbox" name="c" value="c" id="c" style="box-shadow: none;">C
+                </label>
+                <label for="c++">
+                <input type="checkbox" name="c++" value="c++" id="c++" style="box-shadow: none;">C++
+                </label>
+                <label for="java">
+                <input type="checkbox" name="java" value="java" id="java" style="box-shadow: none;">Java
+                </label>
+                <label for="ai">
+                <input type="checkbox" name="ai" value="ai" id="ai" style="box-shadow: none;">AI
+                </label>
+                <label for="machine_learning">
+                <input type="checkbox" name="machine_learning" value="machine_learning" id="machine_learning" style="box-shadow: none;">Machine Learning
+                </label>
+                <label for="robotics">
+                <input type="checkbox" name="robotics" value="robotics" id="robotics" style="box-shadow: none;">Robotics
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="photo"><b>Photo:</b></label></td>
+            <td><input type="file" name="file" id="file" style="box-shadow: none;"></td>
+        </tr> 
+        <tr>
+            <td colspan="4">
+                <input type="submit" value="Submit" style="margin-top: 20px; margin-right: 10px; padding: 10px; text-align: center; width: 330px; color: wheat; background-color: darkslategray;">
+                <input type="reset" value="Reset" style="margin-top: 20px; padding: 10px; text-align: center; width: 330px; color: darkslategray; background-color: wheat;">     
+            </td>
+        </tr>  
+    </table>
+    </form>
+    </center>
+</body>
+</html>
